@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+
+<style>
+	*{
+		font-family: 'Montserrat', sans-serif;
+		margin: 0;
+		padding:0;
+	}
+	h1{
+		padding: 20px;
+	}
+	h2{
+		padding: 20px;
+	}
+	p{
+		margin: 20px;
+	}
+	body {
+		background-color: darkblue;
+	}
+	#logo {
+		display: block;
+		height: 100px;
+		width: 100px;
+		margin: auto;
+		padding-top: 20px;
+	}
+	#titles {
+		text-align: center;
+		color: whitesmoke;
+	}
+	#video {
+		display: block;
+		margin: auto;
+		padding: 30px;
+		width: 80%;
+		height: 40vw;
+	}
+	#instr {
+		background-color: aliceblue;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	#inst-box {
+		display: flex;
+		font-size: 16pt;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#person {
+		display: block;
+		height: 300px;
+	}
+
+	#dep {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: bisque;
+	}
+	.cliente {
+		margin: 50px;
+		width: 300px;
+		text-align: center;
+	}
+	.cliente>img {
+		height: 100px;
+		border-radius: 50%;
+	}
+	.nome {
+		color: orangered;
+	}
+	#bonus-box{
+		text-align: center;
+		background-color: lightblue;
+		width: 100%;
+	}
+	#bonus{
+		display: flex;
+		justify-content: space-around;
+	}
+	.bns{
+		text-align: center;
+	}
+	.bns > img {
+		height: 100px;
+	}
+	#perguntas{
+		width: 100%;
+		background-color: whitesmoke;
+	}
+	#perguntas > h1 {
+		text-align: center;
+	}
+	#perguntas-box{
+		margin: auto;
+		text-align: center;
+		width: 80%;
+	}
+	.compra-box{
+		background-color: darkblue;
+		text-align: center;
+		width: 100%;
+		color: whitesmoke;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.btn-compra{
+		background-color: orangered;
+		color: white;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		height: 50px;
+		width: 350px;
+		text-align: center;
+		font-size: 16pt;
+		border-radius: 10px;
+	}
+	#vagas{
+		position: relative;
+		margin: auto;
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		box-shadow: 0px 0px 20px turquoise;
+	}
+	#porc{
+		position: absolute;
+		top: 30px;left: -40px;
+		height: 200px;
+		width: 200px;
+		background-color: greenyellow;
+		box-shadow: 0px 0px 10px green;
+		margin-top: 200px;
+		border-radius: 40%;
+		margin: auto;
+	}
+	#saber{
+		text-align: center;
+		background-color: antiquewhite;
+	}
+	#social-links{
+		margin-top: 50px;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	#social-links > a{
+		display: block;
+	}
+	#social-links >a > img{
+		height: 50px;
+	}
+	footer{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		color: whitesmoke;
+		text-align: center;
+		width: 100%;
+	}
+	@media(max-width:500px){
+		#instr{
+			text-align: center;
+		}
+		#inst-box{
+			display: block;
+		}
+		#person{
+			display: block;
+			margin: auto;
+			border-radius: 50%;
+		}
+	}
+</style>
+
+<body>
+	<img id="logo" src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png" alt="">
+	<div id="titles">
+		<h2>Inscrições abertas</h2>
+		<h1>Produtividade em tempo de crise</h1>
+		<h3>Assista o vídeo:</h3>
+	</div>
+	<div id="video-box">
+		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/VinyTPDDPzQ"
+			title="YouTube video player" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+	</div>
+	<div class="compra-box">
+		<h1>Compre agora</h1>
+		<a href="" class="btn-compra"> 
+			<p>Comprar agora meu ingresso</p>				
+		</a>
+		<p>de <s>R$ 299,00</s> por <span style="color:lawngreen;">R$ 149,00</span></p>
+		<p>Em até 10x no cartão ou 10% de descontono boleto</p>
+	</div>
+	<div id="instr">
+		<h1>Sobre o instrutor</h1><br>
+		<div id="inst-box">
+			<img id="person" src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum recusandae dolorem, architecto et inventore
+				tempore blanditiis error, adipisci quos sed maiores atque ducimus voluptates dolore itaque, ratione ea
+				numquam dolorum.
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, numquam ipsam quam repellat quisquam
+				dolore! Sapiente saepe culpa alias hic id veritatis, cupiditate consequuntur ex commodi odio quas?
+				Obcaecati, deserunt?
+			</p>
+			
+		</div>
+	</div>
+	<div id="dep">
+		<div class="cliente">
+			<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+			<h3 class="nome">Fulano</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque praesentium accusamus, ipsam,
+				delectus quos aspernatur quis reiciendis, excepturi mollitia officia in temporibus veritatis. Odio
+				commodi fugiat nihil soluta itaque!</p>
+		</div>
+		<div class="cliente">
+			<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+			<h3 class="nome">Fulano</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque praesentium accusamus, ipsam,
+				delectus quos aspernatur quis reiciendis, excepturi mollitia officia in temporibus veritatis. Odio
+				commodi fugiat nihil soluta itaque!</p>
+		</div>
+		<div class="cliente">
+			<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+			<h3 class="nome">Fulano</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque praesentium accusamus, ipsam,
+				delectus quos aspernatur quis reiciendis, excepturi mollitia officia in temporibus veritatis. Odio
+				commodi fugiat nihil soluta itaque!</p>
+		</div>
+		<div class="cliente">
+			<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+			<h3 class="nome">Fulano</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque praesentium accusamus, ipsam,
+				delectus quos aspernatur quis reiciendis, excepturi mollitia officia in temporibus veritatis. Odio
+				commodi fugiat nihil soluta itaque!</p>
+		</div>
+		<div class="cliente">
+			<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+			<h3 class="nome">Fulano</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque praesentium accusamus, ipsam,
+				delectus quos aspernatur quis reiciendis, excepturi mollitia officia in temporibus veritatis. Odio
+				commodi fugiat nihil soluta itaque!</p>
+		</div>
+		<div class="cliente">
+			<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+			<h3 class="nome">Fulano</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque praesentium accusamus, ipsam,
+				delectus quos aspernatur quis reiciendis, excepturi mollitia officia in temporibus veritatis. Odio
+				commodi fugiat nihil soluta itaque!</p>
+		</div>
+	</div>
+	<div id="bonus-box">
+		<h1>Oque você também ganha</h1>
+		<br>
+			<div id="bonus">
+				<div class="bns">
+					<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+					<p>Bônus 1</p>
+				</div>
+				<div class="bns">
+					<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+					<p>Bônus 2</p>
+				</div>
+				<div class="bns">
+					<img src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+					<p>Bônus 3</p>
+				</div>
+			</div>
+			<br>
+	</div>
+	<div id="perguntas">
+		<h1>Perguntas frequentes:</h1>
+		<div id="perguntas-box">
+		<h3>Pergunta ?</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem odio, ut recusandae id
+			quis aut soluta itaque ratione voluptates veniam sequi, autem, nam veritatis perferendis animi! Unde,
+			dolorum neque!
+		</p>
+		<h3>Pergunta ?</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem odio, ut recusandae id
+			quis aut soluta itaque ratione voluptates veniam sequi, autem, nam veritatis perferendis animi! Unde,
+			dolorum neque!
+		</p>
+		<h3>Pergunta ?</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem odio, ut recusandae id
+			quis aut soluta itaque ratione voluptates veniam sequi, autem, nam veritatis perferendis animi! Unde,
+			dolorum neque!
+		</p>
+		<h3>Pergunta ?</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem odio, ut recusandae id
+			quis aut soluta itaque ratione voluptates veniam sequi, autem, nam veritatis perferendis animi! Unde,
+			dolorum neque!
+		</p>
+	</div>
+	<br>
+	</div>
+	<div class="compra-box">
+		<h1>Inscrições abertas, não perca sua vaga !</h1>
+		<a href="" class="btn-compra">
+				<p>Comprar agora meu ingresso</p>				
+			</a>
+		<p>de <s>R$ 299,00</s> por <span style="color:lawngreen;font-weight: bold;">R$ 149,00</span></p>
+		<p>Em até 10x no cartão ou 10% de descontono boleto</p>
+		<div id="vagas">
+			<div id="porc"></div>
+		</div>
+		<p style="color: lawngreen;">70% das vagas já estão preenchidas</p>
+	</div>
+	<div id="saber">
+		<h1>Quer saber mais ?</h1>
+		<p>seuemail@gmail.com</p>
+		<div id="social-links">
+			<a href="">
+				<img src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494494.png?token=exp=1656001354~hmac=40aea6c49c03f419d587a5f2a816d05f" alt="">
+			</a>
+			<a href="">
+				<img src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494475.png?token=exp=1656001387~hmac=a9ae96fd776f85141445a4be274aa8c1" alt="">
+			</a>
+			<a href="">
+				<img src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494488.png?token=exp=1656001387~hmac=1462ad271393f4013be235d2858f6d56" alt="">
+			</a>
+		</div>
+		<br>
+	</div>
+	<footer>
+		<span>2022 - Todos os direitos reservados</span>
+	</footer>
+</body>
+<script>
+	let prec = document.getElementById('porc')
+	let i = 1
+	function girar(){
+		prec.style.transform = `rotate(${i}deg)`
+		i += 2
+	}
+
+	setInterval(girar, 50)
+</script>
+</html>
